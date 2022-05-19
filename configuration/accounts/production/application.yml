@@ -3,6 +3,7 @@ server:
 spring:
   application:
     name: accounts
+accounts:
   datasource:
     url: jdbc:mysql://localhost:3306/accounts?serverTimezone=Europe/Warsaw&useSSL=False&allowPublicKeyRetrieval=True
     username: manager
@@ -16,3 +17,4 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+  allow-get-accounts: true

@@ -17,4 +17,4 @@ accounts:
     show-sql: true
     hibernate:
       ddl-auto: update
-  allow-get-accounts: true
+  allow-get-accounts: false

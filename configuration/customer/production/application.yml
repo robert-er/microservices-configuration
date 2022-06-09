@@ -1,0 +1,19 @@
+server:
+  port: 7776
+spring:
+  application:
+    name: customer
+customer:
+  datasource:
+    url: jdbc:mysql://localhost:3306/customer?serverTimezone=Europe/Warsaw&useSSL=False&allowPublicKeyRetrieval=True
+    username: manager
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
